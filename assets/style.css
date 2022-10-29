@@ -83,6 +83,11 @@ p {
     background-color: var(--dusty-rose);
 }
 
+.large-project img {
+    max-width: 200px;
+    max-height: fit-content;
+}
+
 .contact-me {
     font-family: var(--Font-choice);
 }
