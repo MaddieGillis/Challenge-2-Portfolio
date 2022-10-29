@@ -13,6 +13,7 @@
 body {
     background-color: #dc74eb;
     color: var(--text-color);
+    font-family: var(--Font-choice);
 }
 
 .header {
@@ -82,9 +83,26 @@ p {
     font-family: var(--Font-choice);
 }
 
-.footer {
+.contact-me {
     padding: 30px;
     clear: both;
     font-family: var(--Font-choice)
     text-align: center;
+}
+
+.contact-me nav {
+    padding-top: auto;
+    margin-right: auto;
+    float: center;
+    font-family: var(--Font-choice);
+    font-size: 20px;
+}
+
+.contact-me nav ul {
+    list-style-type: none;
+}
+
+.contact-me nav ul li {
+    display: inline-block;
+    font-size: 16px;
 }
