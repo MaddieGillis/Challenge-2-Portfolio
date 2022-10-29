@@ -1,6 +1,7 @@
 :root {
     --Font-choice: Arial, 'Lucida Sans', sans-serif;
     --dusty-rose: #ed7ecc;
+    --text-color: #204057;
 }
 
 * {
@@ -11,13 +12,14 @@
 
 body {
     background-color: #dc74eb;
+    color: var(--text-color);
 }
 
 .header {
     padding: 20px;
     font-family: var(--Font-choice);
     background-color: #7ecfed;
-    color: hsl(215, 81%, 43%);
+    color: var(--text-color);
 }
 
 .header nav {
@@ -35,6 +37,14 @@ body {
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+}
+
+a {
+    color: ;
+}
+
+p {
+    font-size: 16px;
 }
 
 .float-right {
@@ -70,4 +80,11 @@ body {
 
 .contact-me {
     font-family: var(--Font-choice);
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: var(--Font-choice)
+    text-align: center;
 }
