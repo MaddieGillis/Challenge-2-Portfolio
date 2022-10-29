@@ -1,3 +1,8 @@
+:root {
+    --Font-choice: Arial, 'Lucida Sans', sans-serif;
+    --dusty-rose: #ed7ecc;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,7 +15,59 @@ body {
 
 .header {
     padding: 20px;
-    font-family: Arial, 'Lucida Sans', sans-serif;
+    font-family: var(--Font-choice);
     background-color: #7ecfed;
     color: hsl(215, 81%, 43%);
+}
+
+.header nav {
+    padding-top: auto;
+    margin-right: auto;
+    float: right;
+    font-family: var(--Font-choice);
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.about-me {
+    font-family: var(--Font-choice);
+    background-color: var(--dusty-rose);
+}
+
+.about-me img {
+    max-height: 200px;
+
+}
+
+.projects {
+    font-family: var(--Font-choice);
+    background-color: var(--dusty-rose);
+}
+
+.footer {
+    font-family: var(--Font-choice);
 }
