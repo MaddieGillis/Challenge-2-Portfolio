@@ -3,6 +3,7 @@
     --dusty-rose: #ed7ecc;
     --text-color: #204057;
     --lilac: #dc74eb;
+    --pastel-orange: #faca7d;
 }
 
 * {
@@ -40,9 +41,9 @@ body {
     margin-left: auto;
     font-family: var(--Font-choice);
     font-size: 20px;
-    border: 1px;
+   /* border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red; */
 }
 
 .header nav ul {
@@ -52,9 +53,9 @@ body {
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
-    border: 1px;
+    /*border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red; */
 }
 
 a {
@@ -79,11 +80,13 @@ p {
     margin-right: 25px;
 }
 
+/*
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+*/
 
 main {
     display: flex;
@@ -91,10 +94,10 @@ main {
 
 .about-me {
     font-family: var(--Font-choice);
-    background-color: #faca7d;
-    border: 1px;
+    background-color: var(--pastel-orange);
+    /*border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -108,31 +111,40 @@ main {
 }
 
 .about-me img {
+    justify-content: center;
     max-height: 200px;
     max-width: 200px;
 
 }
 
 .projects {
-    font-family: var(--Font-choice);
+    /*font-family: var(--Font-choice);
     background-color: var(--dusty-rose);
    /* border: 1px;
     border-style: solid;
-    border-color: red;*/
+    border-color: red;
     display: flex;
     flex-wrap: wrap;
     /*flex: 75%;
     flex-wrap: wrap;
     flex-direction: row;
-    flex: 3;*/
+    flex: 3;
     align-items: center;
-    align-content: space-around;
+    align-content: space-around; */
+
+    font-family: var(--Font-choice);
+    background-color: var(--dusty-rose);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
+
 .projects h2 {
-    border-style: solid;
-    border-color: blue;
-    border: 1px;
+    font-size: 48px;
+
 }
 
 .projects img {
@@ -142,13 +154,12 @@ main {
 }
 
 .large-project {
-    width: 70%;
     justify-content: center;
     padding: 20px;
-    border: 1px;
+    /*border: 1px;
     border-style: solid;
     border-color: red;
-    align-items: stretch;
+    align-items: stretch;*/
 }
 
 .large-project img {
@@ -158,11 +169,13 @@ main {
 }
 
 .coming-soon {
-    flex-direction: row;
-    width: 40%;
-    border: 1px;
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
 }
 
 .coming-soon img {
@@ -172,6 +185,8 @@ main {
 }
 
 /*
+Commented out projects left in to be used as I add more projects
+
 .project-2 {
     width: 40%;
     border: 1px;
@@ -214,9 +229,9 @@ main {
     clear: both;
     background-color: var(--lilac);
     font-family: var(--Font-choice);
-    border: 1px;
+    /*border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -231,18 +246,18 @@ main {
     justify-content: flex-end;
     font-family: var(--Font-choice);
     font-size: 20px;
-    border: 1px;
+    /*border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
     align-items: flex-end;
     justify-content: space-evenly;
 }
 
 .contact-me nav ul {
     list-style-type: none;
-    border: 1px;
+    /*border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -252,8 +267,19 @@ main {
 .contact-me nav ul li {
     display: inline-block;
     font-size: 16px;
-    border: 1px;
+    /*border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
     align-items: flex-end;
+}
+
+@media screen and (max-width: 480px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    
+    article {
+      order: 2;
+    }
 }
