@@ -9,18 +9,6 @@
     padding: 0;
     margin: 0;
 }
-.wrapper {
-    display: flex;  
-    flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center; 
-  }
-  
-  .wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
-  }
-
 
 body {
     background-color: #dc74eb;
@@ -110,6 +98,7 @@ p {
 
 .about-me img {
     max-height: 200px;
+    max-width: 200px;
 
 }
 
