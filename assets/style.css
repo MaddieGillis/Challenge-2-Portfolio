@@ -102,7 +102,10 @@ p {
     border-style: solid;
     border-color: red;
     display: flex;
+    flex: 25%;
     flex-wrap: wrap;
+    flex-direction: column;
+    float: left;
 }
 
 .about-me img {
@@ -117,6 +120,7 @@ p {
     border-style: solid;
     border-color: red;
     display: flex;
+    flex: 75%;
     flex-wrap: wrap;
 }
 
