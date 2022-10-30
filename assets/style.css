@@ -116,9 +116,9 @@ main {
 .projects {
     font-family: var(--Font-choice);
     background-color: var(--dusty-rose);
-    border: 1px;
+   /* border: 1px;
     border-style: solid;
-    border-color: red;
+    border-color: red;*/
     display: flex;
     flex-wrap: wrap;
     /*flex: 75%;
@@ -127,6 +127,12 @@ main {
     flex: 3;*/
     align-items: center;
     align-content: space-around;
+}
+
+.projects h2 {
+    border-style: solid;
+    border-color: blue;
+    border: 1px;
 }
 
 .projects img {
@@ -147,11 +153,12 @@ main {
 
 .large-project img {
     justify-content: center;
-    max-width: 500px;
+    max-width: 1000px;
     height: auto;
 }
 
 .coming-soon {
+    flex-direction: row;
     width: 40%;
     border: 1px;
     border-style: solid;
@@ -159,6 +166,7 @@ main {
 }
 
 .coming-soon img {
+    flex-direction: row;
     width: 200px;
     height: 200px;
 }
