@@ -9,26 +9,50 @@
     padding: 0;
     margin: 0;
 }
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
 
 body {
     background-color: #dc74eb;
     color: var(--text-color);
     font-family: var(--Font-choice);
+    
 }
 
 .header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     padding: 20px;
     font-family: var(--Font-choice);
     background-color: #7ecfed;
     color: var(--text-color);
+
+}
+
+.header h1 {
+    font-family: var(--Font-choice);
+    color: var(--text-color);
 }
 
 .header nav {
-    padding-top: auto;
-    margin-right: auto;
-    float: right;
+
+    margin-left: auto;
     font-family: var(--Font-choice);
     font-size: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 .header nav ul {
@@ -38,6 +62,9 @@ body {
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 a {
@@ -71,6 +98,11 @@ p {
 .about-me {
     font-family: var(--Font-choice);
     background-color: var(--dusty-rose);
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-me img {
@@ -81,6 +113,11 @@ p {
 .projects {
     font-family: var(--Font-choice);
     background-color: var(--dusty-rose);
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .projects img {
@@ -89,29 +126,48 @@ p {
 }
 
 .contact-me {
-    font-family: var(--Font-choice);
-}
-
-.contact-me {
     padding: 30px;
     clear: both;
-    font-family: var(--Font-choice)
-    text-align: center;
+    font-family: var(--Font-choice);
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
 }
 
 .contact-me nav {
-    padding-top: auto;
-    margin-right: auto;
-    float: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     font-family: var(--Font-choice);
     font-size: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .contact-me nav ul {
     list-style-type: none;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
 }
 
 .contact-me nav ul li {
     display: inline-block;
     font-size: 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    align-items: flex-end;
 }
