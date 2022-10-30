@@ -97,6 +97,7 @@ main {
     border-color: red;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
    /* flex: 25%;
     flex-wrap: wrap;
     flex-direction: column;
@@ -119,40 +120,86 @@ main {
     border-style: solid;
     border-color: red;
     display: flex;
-    flex: 75%;
+    flex-wrap: wrap;
+    /*flex: 75%;
     flex-wrap: wrap;
     flex-direction: row;
-    flex: 3;
+    flex: 3;*/
+    align-items: center;
+    align-content: space-around;
 }
 
 .projects img {
-    max-width: 200px;
-    max-height: 200px;
+    justify-content: center;
+
+
 }
 
 .large-project {
     width: 70%;
+    justify-content: center;
+    padding: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    align-items: stretch;
 }
 
+.large-project img {
+    justify-content: center;
+    max-width: 500px;
+    height: auto;
+}
+
+.coming-soon {
+    width: 40%;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+.coming-soon img {
+    width: 200px;
+    height: 200px;
+}
+
+/*
 .project-2 {
     width: 40%;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 .project-3 {
     width: 40%;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 .project-4 {
     width: 40%;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 .project-5 {
     width: 40%;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 .project-6 {
     width: 40%;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
 }
+
+*/
 
 .contact-me {
     padding: 30px;
