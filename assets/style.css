@@ -2,6 +2,7 @@
     --Font-choice: Arial, 'Lucida Sans', sans-serif;
     --dusty-rose: #ed7ecc;
     --text-color: #204057;
+    --lilac: #dc74eb;
 }
 
 * {
@@ -9,21 +10,9 @@
     padding: 0;
     margin: 0;
 }
-.wrapper {
-    display: flex;  
-    flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center; 
-  }
-  
-  .wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
-  }
-
 
 body {
-    background-color: #dc74eb;
+    background-color: var(--dusty-rose);
     color: var(--text-color);
     font-family: var(--Font-choice);
     
@@ -43,6 +32,7 @@ body {
 .header h1 {
     font-family: var(--Font-choice);
     color: var(--text-color);
+    font-size: 36px;
 }
 
 .header nav {
@@ -95,21 +85,30 @@ p {
     margin-left: 20px;
 }
 
+main {
+    display: flex;
+}
+
 .about-me {
     font-family: var(--Font-choice);
-    background-color: var(--dusty-rose);
+    background-color: #faca7d;
     border: 1px;
     border-style: solid;
     border-color: red;
     display: flex;
-    flex: 25%;
+    flex-direction: column;
+   /* flex: 25%;
     flex-wrap: wrap;
     flex-direction: column;
     float: left;
+    flex: 1; */
+    width: 25%;
+    
 }
 
 .about-me img {
     max-height: 200px;
+    max-width: 200px;
 
 }
 
@@ -122,6 +121,8 @@ p {
     display: flex;
     flex: 75%;
     flex-wrap: wrap;
+    flex-direction: row;
+    flex: 3;
 }
 
 .projects img {
@@ -129,9 +130,34 @@ p {
     max-height: 200px;
 }
 
+.large-project {
+    width: 70%;
+}
+
+.project-2 {
+    width: 40%;
+}
+
+.project-3 {
+    width: 40%;
+}
+
+.project-4 {
+    width: 40%;
+}
+
+.project-5 {
+    width: 40%;
+}
+
+.project-6 {
+    width: 40%;
+}
+
 .contact-me {
     padding: 30px;
     clear: both;
+    background-color: var(--lilac);
     font-family: var(--Font-choice);
     border: 1px;
     border-style: solid;
@@ -141,6 +167,7 @@ p {
     justify-content: center;
     align-items: flex-end;
     align-content: center;
+    margin-bottom: auto;
 }
 
 .contact-me nav {
