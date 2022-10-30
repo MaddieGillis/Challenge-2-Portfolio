@@ -90,6 +90,7 @@ p {
 
 main {
     display: flex;
+    
 }
 
 .about-me {
@@ -275,8 +276,10 @@ Commented out projects left in to be used as I add more projects
 
 @media screen and (max-width: 480px) {
     main,
-    nav {
-      flex-direction: column;
+    nav,
+    aside,
+    p {
+      flex-direction: row;
     }
     
     article {
