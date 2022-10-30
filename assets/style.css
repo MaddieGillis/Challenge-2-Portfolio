@@ -83,6 +83,10 @@ p {
     margin-left: 20px;
 }
 
+main {
+    display: flex;
+}
+
 .about-me {
     font-family: var(--Font-choice);
     background-color: var(--dusty-rose);
